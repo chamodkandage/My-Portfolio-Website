@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About | Chamod Kandage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#0f172a;
+    color:#e5e7eb;
+}
+nav {
+    background:#020617;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+nav a {
+    color:#e5e7eb;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+}
+nav a:hover { color:#38bdf8; }
+
+section {
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+    animation:fadeUp 0.8s ease forwards;
+}
+
+h2 { color:#38bdf8; margin-bottom:15px; }
+
+footer {
+    text-align:center;
+    padding:25px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+/* Cards & 2-row layout */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top:30px;
+}
+
+/* Row 1 special width for importance */
+.row.row-1 {
+    grid-template-columns: 1.2fr 1fr; /* Technical Skills slightly wider */
+}
+
+.card {
+    background:#020617;
+    padding:25px;
+    border-radius:12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow:0 10px 30px rgba(56,189,248,0.15);
+}
+
+.card h3 { color:#7dd3fc; margin-bottom:10px; }
+
+a { color:#38bdf8; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+@keyframes fadeUp {
+    from { opacity:0; transform:translateY(25px); }
+    to { opacity:1; transform:translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="experience.html">Experience</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<h2>About Me</h2>
+<p>
+I am a data analytics and data science professional with 2+ years of industry experience, 
+specializing in delivering impactful, data-driven solutions. I combine a strong foundation in Python, 
+machine learning, and business intelligence with practical problem-solving skills to 
+address complex challenges.
+</p>
+
+<p>
+My expertise lies in transforming raw data into actionable insights, enabling businesses to make 
+informed decisions and achieve operational excellence. I have hands-on experience in developing machine 
+learning models, designing dynamic dashboards, and automating workflows to streamline processes and improve 
+efficiency. With a focus on both technical proficiency and strategic thinking, I bridge 
+the gap between data science and real-world business applications.
+</p>
+
+<!-- Row 1: Technical Skills + Academic Qualifications -->
+<div class="row row-1">
+
+<div class="card">
+<h3>Technical Skills</h3>
+<ul>
+<li><strong>Programming:</strong> Python, SQL, R</li>
+<li><strong>Data Visualization:</strong> Power BI, Tableau</li>
+<li><strong>Machine Learning:</strong> Supervised Learning, Unsupervised Learning</li>
+<li><strong>Text Analytics:</strong> Text Preprocessing, Sentiment Analysis</li>
+<li><strong>Data Simulation:</strong> NetLogo</li>
+<li><strong>Microsoft Power Platform:</strong> Power Query, Power Apps, Power Automate, etc</li>
+<li><strong>Data Mining & Process Mining</strong></li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Academic Qualifications</h3>
+<ul>
+<li><strong>Master of Business Analytics – Data Science</strong>  
+University of Colombo, School of Computing (2024 - Present)</li>
+<li><strong>BSc in Physical Science</strong>  
+University of Sri Jayewardenepura (2020 - 2023)<br>
+Covering <strong>Statistics, Mathematics, and Economics</strong></li>
+<li><strong>Diploma in IT</strong>  
+University of Colombo School of Computing (2021 - 2022)</li>
+</ul>
+</div>
+
+</div>
+
+<!-- Row 2: Certifications + Achievements -->
+<div class="row row-2">
+
+<div class="card">
+<h3>Certifications</h3>
+<ul>
+<li><strong>IBM Data Science Professional Certificate</strong><br>
+<a href="https://www.coursera.org/account/accomplishments/professional-cert/TLXLIN33V12U" target="_blank">View Certificate</a></li>
+
+<li><strong>Microsoft Azure Machine Learning</strong><br>
+<a href="https://www.coursera.org/account/accomplishments/verify/WXZBHUQATIPW" target="_blank">View Certificate</a></li>
+
+<li><strong>CIMA Certificate in Business Accounting</strong><br>
+<a href="https://drive.google.com/file/d/1LSlFVDLbSJvTPsbFip3OHvsMt_Gy0qXn/view?usp=sharing" target="_blank">View Certificate</a></li>
+
+<li><strong>Process Mining: Data Science in Action</strong><br>
+<a href="https://www.coursera.org/account/accomplishments/verify/GAX30Z8SNY5R" target="_blank">View Certificate</a></li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Achievements</h3>
+<ul>
+<li><strong>Star Innovator – Ascent Business Solutions</strong><br>
+For acing innovation and helping clients become greater than<br>
+<a href="https://drive.google.com/file/d/17QcO-btICy_QdPNtztRrW3WL0q-07jll/view?usp=sharing" target="_blank">View Details</a></li>
+
+<li><strong>NDB Battle of The Brains, 2023</strong><br>
+Runner-up<br>
+<a href="https://drive.google.com/file/d/1-iZQEkjzGNcySKw2kHVu-XU24v-G0_Fr/view?usp=sharing" target="_blank">View Details</a></li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2025 Chamod Kandage
+</footer>
+
+</body>
+</html>
