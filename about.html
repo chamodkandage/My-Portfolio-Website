@@ -7,41 +7,49 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 body {
-    margin:0;
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:#0f172a;
-    color:#e5e7eb;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
 }
+
 nav {
-    background:#020617;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:10;
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
+
 nav a {
-    color:#e5e7eb;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:600;
+    color: #e5e7eb;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
 }
-nav a:hover { color:#38bdf8; }
+
+nav a:hover { 
+    color: #38bdf8; 
+}
 
 section {
-    max-width:1000px;
-    margin:auto;
-    padding:60px 20px;
-    animation:fadeUp 0.8s ease forwards;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+    animation: fadeUp 0.8s ease forwards;
 }
 
-h2 { color:#38bdf8; margin-bottom:15px; }
+h2 { 
+    color: #38bdf8; 
+    margin-bottom: 15px; 
+}
 
 footer {
-    text-align:center;
-    padding:25px;
-    background:#020617;
-    color:#94a3b8;
+    text-align: center;
+    padding: 25px;
+    background: #020617;
+    color: #94a3b8;
 }
 
 /* Cards & 2-row layout */
@@ -49,7 +57,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 /* Row 1 special width for importance */
@@ -58,24 +66,51 @@ footer {
 }
 
 .card {
-    background:#020617;
-    padding:25px;
-    border-radius:12px;
+    background: #020617;
+    padding: 25px;
+    border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
     transform: translateY(-5px);
-    box-shadow:0 10px 30px rgba(56,189,248,0.15);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
 }
 
-.card h3 { color:#7dd3fc; margin-bottom:10px; }
+.card h3 { 
+    color: #7dd3fc; 
+    margin-bottom: 10px; 
+}
 
-a { color:#38bdf8; text-decoration:none; }
-a:hover { text-decoration:underline; }
+a { 
+    color: #38bdf8; 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
 
 @keyframes fadeUp {
-    from { opacity:0; transform:translateY(25px); }
-    to { opacity:1; transform:translateY(0); }
+    from { 
+        opacity: 0; 
+        transform: translateY(25px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .row.row-1 {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+
+    .card {
+        padding: 20px; /* Reduce padding for better spacing on mobile */
+    }
 }
 </style>
 </head>
