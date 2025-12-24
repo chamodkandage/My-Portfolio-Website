@@ -5,39 +5,49 @@
 <title>Chamod Kandage | Data Scientist</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body{margin:0;font-family:Arial;background:#0f172a;color:#e5e7eb}
-nav{background:#020617;padding:15px;text-align:center}
-nav a{color:#e5e7eb;margin:0 15px;text-decoration:none;font-weight:bold}
-nav a:hover{color:#38bdf8}
-header{text-align:center;padding:80px 20px}
-h1{font-size:3rem;margin-bottom:10px}
-p{color:#94a3b8}
-.btn{background:#38bdf8;color:#020617;padding:12px 20px;text-decoration:none;border-radius:5px;font-weight:bold}
-section{max-width:900px;margin:auto;padding:40px 20px}
-footer{text-align:center;padding:20px;background:#020617;color:#94a3b8}
-</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+body { margin: 0; font-family: Arial; background: #0f172a; color: #e5e7eb; }
+nav { background: #020617; padding: 15px; text-align: center; }
+nav a { color: #e5e7eb; margin: 0 15px; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #38bdf8; }
+header { text-align: center; padding: 90px 20px; }
+h1 { font-size: 3rem; margin-bottom: 10px; }
+p { color: #94a3b8; }
+.btn {
+    background: #38bdf8;
+    color: #020617;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px; /* Added margin for spacing */
+}
+section { max-width: 900px; margin: auto; padding: 40px 20px; }
+footer { text-align: center; padding: 20px; background: #020617; color: #94a3b8; }
 
-<style>
-    .home-grid {
+/* Responsive Button Fix */
+@media (max-width: 600px) {
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0; /* Adjust spacing for mobile */
+    }
+}
+
+.home-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
-.card h3 i {
-    margin-right: 8px;
-    color: #7dd3fc;
-}
-
-.card ul {
-    padding-left: 20px;
-}
-
-.card ul li {
-    margin-bottom: 10px;
-    color: #cbd5f5;
-}
+.card h3 i { margin-right: 8px; color: #7dd3fc; }
+.card ul { padding-left: 20px; }
+.card ul li { margin-bottom: 10px; color: #cbd5f5; }
 
 body {
     margin: 0;
@@ -83,7 +93,7 @@ section {
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(56,189,248,0.15);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
 }
 
 .btn {
@@ -122,7 +132,7 @@ footer {
     }
 }
 </style>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -135,11 +145,10 @@ footer {
 <a href="contact.html">Contact</a>
 </nav>
 
-<header>
 <header style="text-align:center;padding:90px 20px">
     
     <!-- Profile Image -->
-    <img src="profile.jpg" alt="Chamod Kandage" 
+    <img src="assets/images/profile.jpg" alt="Chamod Kandage" 
          style="width:180px;height:180px;border-radius:50%;border:3px solid #38bdf8;margin-bottom:20px;object-fit:cover;">
     
     <h1>Chamod Kandage</h1>
@@ -156,21 +165,19 @@ footer {
 
     <br><br>
 
-    <a href="projects.html" class="btn">
-        <i class="fas fa-diagram-project"></i> View Projects
-    </a>
+    <!-- Button Container for Responsiveness -->
+    <div class="btn-container">
+        <a href="projects.html" class="btn">
+            <i class="fas fa-diagram-project"></i> View Projects
+        </a>
 
-    &nbsp;&nbsp;
-
-    <a href="Chamod_Kandage_CV.pdf" class="btn" download>
-        <i class="fas fa-download"></i> Download CV
-    </a>
+        <a href="assets/cv/Chamod_Kandage_CV.pdf" class="btn" download>
+            <i class="fas fa-download"></i> Download CV
+        </a>
+    </div>
 </header>
 
-
-</header>
 <section>
-
 <h2 style="text-align:center;margin-bottom:40px;">What I Do Best</h2>
 
 <div class="home-grid">
@@ -198,7 +205,6 @@ footer {
     </div>
 
 </div>
-
 </section>
 
 <footer>
@@ -207,4 +213,3 @@ footer {
 
 </body>
 </html>
-
