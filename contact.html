@@ -34,6 +34,11 @@ a{color:#38bdf8}
     color: #94a3b8;
 }
 
+/* Ensure all elements use border-box */
+* {
+    box-sizing: border-box;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -63,6 +68,7 @@ a{color:#38bdf8}
     display: inline-block;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-top: 10px; /* Added for better spacing */
 }
 
 .btn:hover {
@@ -291,7 +297,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             // Restore button state
             submitButton.textContent = originalButtonText;
             submitButton.disabled = false;
-        }); // Fixed: Added closing parenthesis here
+        });
 });
 </script>
 
