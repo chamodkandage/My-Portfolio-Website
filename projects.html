@@ -72,6 +72,7 @@ section {
     font-weight: bold;
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 10px; /* Added for vertical spacing */
 }
 
 .btn:hover {
@@ -97,6 +98,20 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive Button Fix */
+@media (max-width: 600px) {
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0; /* Adjust spacing for mobile */
     }
 }
 </style>
@@ -131,12 +146,14 @@ footer {
         <i class="fas fa-tools"></i>
         <strong>Tools:</strong> Python, NetLogo, Statistical Analysis, Data Visualization
     </p>
-    <a href="https://medium.com/@chamodmalshankandage/analyzing-the-impact-of-increasing-daily-wages-of-tea-plantation-labourers-to-lkr-2000-ea7a5b84e55e" target="_blank" class="btn">
-        Read on Medium
-    </a>
-    <a href="https://github.com/chamodkandage/Tea-Plantation-Wage-Impact-Analysis--NetLogo-Agent-Based-Model-Simulation" target="_blank" class="btn">
-        View Code
-    </a>
+    <div class="btn-container">
+        <a href="https://medium.com/@chamodmalshankandage/analyzing-the-impact-of-increasing-daily-wages-of-tea-plantation-labourers-to-lkr-2000-ea7a5b84e55e" target="_blank" class="btn">
+            Read on Medium
+        </a>
+        <a href="https://github.com/chamodkandage/Tea-Plantation-Wage-Impact-Analysis--NetLogo-Agent-Based-Model-Simulation" target="_blank" class="btn">
+            View Code
+        </a>
+    </div>
 </div>
 
 <div class="card">
@@ -152,12 +169,14 @@ footer {
         <i class="fas fa-tools"></i>
         <strong>Tools:</strong> Python, SARIMAX Models, Power BI, CBSL Data
     </p>
-    <a href="https://medium.com/@chamodmalshankandage/a-data-driven-strategy-for-sri-lanka-to-achieve-a-10-billion-usd-in-annual-exports-b8752461fd7e" target="_blank" class="btn">
-        Read on Medium
-    </a>
-    <a href="https://github.com/chamodkandage/Forecast-of-Srilanka-s-TOP-10-Export-Sectors" target="_blank" class="btn">
-        View Code
-    </a>
+    <div class="btn-container">
+        <a href="https://medium.com/@chamodmalshankandage/a-data-driven-strategy-for-sri-lanka-to-achieve-a-10-billion-usd-in-annual-exports-b8752461fd7e" target="_blank" class="btn">
+            Read on Medium
+        </a>
+        <a href="https://github.com/chamodkandage/Forecast-of-Srilanka-s-TOP-10-Export-Sectors" target="_blank" class="btn">
+            View Code
+        </a>
+    </div>
 </div>
 
 <div class="card">
@@ -173,12 +192,14 @@ footer {
         <i class="fas fa-tools"></i>
         <strong>Tools:</strong> Python, Hypothesis Testing, Chi-Squared Test
     </p>
-    <a href="https://medium.com/@chamodmalshankandage/the-global-rise-of-artificial-intelligence-in-the-workforce-displacement-threat-or-productivity-f455d74cac87" target="_blank" class="btn">
-        Read on Medium
-    </a>
-    <a href="https://github.com/chamodkandage/-The-Global-Rise-of-Artificial-Intelligence-in-the-Workforce-Analysis" target="_blank" class="btn">
-        View Code
-    </a>
+    <div class="btn-container">
+        <a href="https://medium.com/@chamodmalshankandage/the-global-rise-of-artificial-intelligence-in-the-workforce-displacement-threat-or-productivity-f455d74cac87" target="_blank" class="btn">
+            Read on Medium
+        </a>
+        <a href="https://github.com/chamodkandage/-The-Global-Rise-of-Artificial-Intelligence-in-the-Workforce-Analysis" target="_blank" class="btn">
+            View Code
+        </a>
+    </div>
 </div>
 
 <div class="card">
@@ -195,12 +216,14 @@ footer {
         <i class="fas fa-tools"></i>
         <strong>Tools:</strong> NetLogo, Agent-Based Modeling (ABM)
     </p>
-    <a href="https://www.linkedin.com/posts/chamod-kandage_netlogo-agentbasedmodeling-simulation-activity-7345134561032327168-wCbu?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLhHz0BkBaGPB8x209Y07HqwrbIAe9OdSI" target="_blank" class="btn">
-        View Demo
-    </a>
-    <a href="https://github.com/chamodkandage/SuperMarketSimulation_Netlogo" target="_blank" class="btn">
-        View Code
-    </a>
+    <div class="btn-container">
+        <a href="https://www.linkedin.com/posts/chamod-kandage_netlogo-agentbasedmodeling-simulation-activity-7345134561032327168-wCbu?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLhHz0BkBaGPB8x209Y07HqwrbIAe9OdSI" target="_blank" class="btn">
+            View Demo
+        </a>
+        <a href="https://github.com/chamodkandage/SuperMarketSimulation_Netlogo" target="_blank" class="btn">
+            View Code
+        </a>
+    </div>
 </div>
 
 <div class="card">
@@ -217,12 +240,14 @@ footer {
         <i class="fas fa-tools"></i>
         <strong>Tools:</strong> R, Data Cleaning, Statistical Analysis, Data Visualization
     </p>
-    <a href="https://chamodkandage.github.io/pakistanCorona/" target="_blank" class="btn">
-        View Project
-    </a>
-    <a href="https://github.com/chamodkandage/pakistanCorona" target="_blank" class="btn">
-        View Code
-    </a>
+    <div class="btn-container">
+        <a href="https://chamodkandage.github.io/pakistanCorona/" target="_blank" class="btn">
+            View Project
+        </a>
+        <a href="https://github.com/chamodkandage/pakistanCorona" target="_blank" class="btn">
+            View Code
+        </a>
+    </div>
 </div>
 
 </section>
