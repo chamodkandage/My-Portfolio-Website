@@ -4,57 +4,28 @@
 <meta charset="UTF-8">
 <title>Chamod Kandage | Data Scientist</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body { margin: 0; font-family: Arial; background: #0f172a; color: #e5e7eb; }
-nav { background: #020617; padding: 15px; text-align: center; }
-nav a { color: #e5e7eb; margin: 0 15px; text-decoration: none; font-weight: bold; }
-nav a:hover { color: #38bdf8; }
-header { text-align: center; padding: 90px 20px; }
-h1 { font-size: 3rem; margin-bottom: 10px; }
-p { color: #94a3b8; }
-.btn {
-    background: #38bdf8;
-    color: #020617;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 5px; /* Added margin for spacing */
-}
-section { max-width: 900px; margin: auto; padding: 40px 20px; }
-footer { text-align: center; padding: 20px; background: #020617; color: #94a3b8; }
-
-/* Responsive Button Fix */
-@media (max-width: 600px) {
-    .btn-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        margin: 10px 0; /* Adjust spacing for mobile */
-    }
-}
-
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.card h3 i { margin-right: 8px; color: #7dd3fc; }
-.card ul { padding-left: 20px; }
-.card ul li { margin-bottom: 10px; color: #cbd5f5; }
-
+/* ===== Page Load Animation (ADDED) ===== */
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #0f172a;
     color: #e5e7eb;
+    animation: pageLoad 0.9s ease-out forwards;
 }
+
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ===== End Animation ===== */
 
 nav {
     background: #020617;
@@ -74,6 +45,35 @@ nav a {
 
 nav a:hover {
     color: #38bdf8;
+}
+
+header {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #94a3b8;
+}
+
+.btn {
+    background: #38bdf8;
+    color: #020617;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #0ea5e9;
 }
 
 section {
@@ -96,20 +96,6 @@ section {
     box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
 }
 
-.btn {
-    background: #38bdf8;
-    color: #020617;
-    padding: 12px 22px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.btn:hover {
-    background: #0ea5e9;
-}
-
 h1, h2, h3 {
     color: #38bdf8;
 }
@@ -121,6 +107,7 @@ footer {
     color: #94a3b8;
 }
 
+/* Existing animation */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -131,7 +118,42 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* Responsive Button Fix */
+@media (max-width: 600px) {
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card h3 i {
+    margin-right: 8px;
+    color: #7dd3fc;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
 </style>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -145,12 +167,10 @@ footer {
 <a href="contact.html">Contact</a>
 </nav>
 
-<header style="text-align:center;padding:90px 20px">
-    
-    <!-- Profile Image -->
-    <img src="profile.jpg" alt="Chamod Kandage" 
+<header>
+    <img src="profile.jpg" alt="Chamod Kandage"
          style="width:180px;height:180px;border-radius:50%;border:3px solid #38bdf8;margin-bottom:20px;object-fit:cover;">
-    
+
     <h1>Chamod Kandage</h1>
 
     <p style="font-size:1.2rem;color:#94a3b8">
@@ -165,7 +185,6 @@ footer {
 
     <br><br>
 
-    <!-- Button Container for Responsiveness -->
     <div class="btn-container">
         <a href="projects.html" class="btn">
             <i class="fas fa-diagram-project"></i> View Projects
@@ -182,7 +201,6 @@ footer {
 
 <div class="home-grid">
 
-    <!-- Core Expertise -->
     <div class="card">
         <h3><i class="fas fa-laptop-code"></i> Core Expertise</h3>
         <ul>
@@ -193,7 +211,6 @@ footer {
         </ul>
     </div>
 
-    <!-- Key Highlights -->
     <div class="card">
         <h3><i class="fas fa-star"></i> Key Highlights</h3>
         <ul>
@@ -213,4 +230,3 @@ footer {
 
 </body>
 </html>
-
